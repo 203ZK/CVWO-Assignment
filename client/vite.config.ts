@@ -18,6 +18,6 @@ export default defineConfig(({ mode }) => {
       }
     },
     plugins: [react()],
+    base: "/CVWO-Assignment/"
   };
-
 })
