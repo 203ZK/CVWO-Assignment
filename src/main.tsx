@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router"
+import { createHashRouter, RouterProvider } from "react-router"
 
 import Login from "./components/pages/Login"
 import Register from "./components/pages/Register"
@@ -9,7 +9,7 @@ import CreateThread from "./components/pages/CreateThread"
 import EditThread from "./components/pages/EditThread"
 import ThreadPost from "./components/pages/ThreadPost"
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Login />
