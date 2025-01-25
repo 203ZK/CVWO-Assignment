@@ -8,6 +8,7 @@ import Forum from "./components/pages/Forum"
 import CreateThread from "./components/pages/CreateThread"
 import EditThread from "./components/pages/EditThread"
 import ThreadPost from "./components/pages/ThreadPost"
+import App from './App'
 
 const router = createHashRouter([
   {
@@ -42,6 +43,6 @@ const router = createHashRouter([
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <App />
   </StrictMode>,
 )

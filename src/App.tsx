@@ -9,7 +9,7 @@ import ThreadPost from "./components/pages/ThreadPost"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/CVWO-Assignment">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
